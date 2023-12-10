@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "New Reddit Redirect",
+  "description": "Redirects to the \"old new\" reddit.",
+  "version": "1.0",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://www.reddit.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "icons": {
+    "32": "new-reddit-redirect32.png",
+    "48": "new-reddit-redirect48.png",
+    "128": "new-reddit-redirect128.png"
+  }
+}
